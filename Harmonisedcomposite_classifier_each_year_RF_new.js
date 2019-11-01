@@ -331,7 +331,7 @@ var visParams = {
 Map.addLayer(image1, visParams, 'image1');
 Map.addLayer(image2, visParams, 'image2');
 Map.addLayer(image3, visParams, 'image3');
-
+//make a phenology composite to see the gradient of change (works on the areas of overlap)
 Map.addLayer(image1.select('ndvi_median').addBands(image2.select('ndvi_median')).addBands(image3.select('ndvi_median')));
 
 
